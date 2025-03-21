@@ -1,14 +1,8 @@
 <script setup lang="ts">
 
-import { ref } from 'vue';
 import Button from "primevue/button";
 import Card from "primevue/card";
-
-import TestCircle from "../assets/TestCircle.svg";
-
-
-
-
+import Header from "../components/Header/HeaderDefault.vue";
 
 
 
@@ -16,7 +10,8 @@ import TestCircle from "../assets/TestCircle.svg";
 
 
 <template>
-<div class=" bg-gray-600">
+<Header />
+<div class=" background">
   <div class=" flex align-center justify-center y-9 ">
     <Card style="width: 25rem; overflow: hidden">
       <template #header>
@@ -38,17 +33,6 @@ import TestCircle from "../assets/TestCircle.svg";
       </template>
     </Card>
   </div>
-
-  
-  <div class="w-64 h-64">
-    <svg class="svg-icon w-full h-full" viewBox="0 0 317.46 321.73" xmlns="http://www.w3.org/2000/svg">
-      <ellipse  id="Ellipse2" class="cls-1 color-white" cx="158.73" cy="160.87" rx="158.23" ry="160.37" />
-      <circle id="Ellipse" class="cls-2 color-white" cx="158.73" cy="160.87" r="39.94"/>
-    </svg>
-  </div>
-
-  <h1> TEST </h1>
-
 
 </div>
 
@@ -84,6 +68,10 @@ import TestCircle from "../assets/TestCircle.svg";
   to {
     transform: translateY(-20px);
   }
+}
+
+.background {
+  background-color: #1A1537;
 }
 
 </style>
