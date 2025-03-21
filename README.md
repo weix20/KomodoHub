@@ -51,6 +51,16 @@ Before finalizing, ensure type safety and check for potential issues by running:
 ```bash
 npm run build
 ```
+
+### Pulling the latest changes
+When a change is made, we can pull those latest changes by running
+```bash
+git pull 
+```
+Sometimes you may need to use
+```bash
+git pull -all 
+```
 This will warn you of any problems that could occur if the site was uploaded to a server.  
 (Although we won't be deploying, it's good practice to test this step.)
 
