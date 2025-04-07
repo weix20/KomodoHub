@@ -8,12 +8,20 @@ export default defineComponent({
 
 <template>
     <header class="bg-transparent text-white">
-            Komodo Hub
+        <div>
+          <h1 class=" font-bold text-[50px] py-4 Manrope">
+              Komodo Hub
+          </h1>
+        </div>
     </header>
 </template>
 
 <style scoped>
-header {
+.header {
     background-color: #1A1537;
+}
+
+.Manrope{
+    font-family: Manrope, sans-serif;
 }
 </style>

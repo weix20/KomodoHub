@@ -9,30 +9,16 @@ import Header from "../components/Header/HeaderDefault.vue";
 </script>
 
 
-<template>
-<Header />
-<div class=" background">
-  <div class=" flex align-center justify-center y-9 ">
-    <Card style="width: 25rem; overflow: hidden">
-      <template #header>
-          <img alt="user header" src="../assets/vue.svg" />
-      </template>
-      <template #title>Advanced Card</template>
-      <template #subtitle>Card subtitle</template>
-      <template #content>
-          <p class="m-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-              quas!
-          </p>
-      </template>
-      <template #footer>
-          <div class="flex gap-4 mt-1">
-              <Button label="Cancel" severity="secondary" outlined class="w-full" />
-              <Button label="Save" class="w-full" />
-          </div>
-      </template>
-    </Card>
-  </div>
+<template >
+<Header class=" background" />
+<div class=" background" >
+    <h1 class=" flex-auto align-middle text-center font-bold text-xl"> A Digital Platform for Community-Supported Animal Conservation </h1>
+    <div class=" flex-auto left-20   ">
+      <h1 class=" flex-auto align-middle text-center "> The Problems </h1>
+      <h2 class=" flex-auto align-middle text-center "> Badan Pusat Statistik, the Indonesian Bureau of Statistics, has recently published data on the country’s endangered endemic species. Despite spending millions of dollars on conservation efforts, the government might have not seen any significant breakthroughs in the population of some species. The success of Komodo has been largely exclusive, and the world is now left with merely less than 100 Sumatran Tigers, Javan Rhinoceros, Bali Mynas, Javan Eagles, Tarsius, and Celebes Crested Macaques, respectively. Habitat loss remains the primary cause of the problems. Other causes include habitat changes, commercial over-exploitation, the introduction of harmful non-native species, pollution, and the spread of diseases. </h2>
+    </div>
+
+    <img src="../../public/CustomShapeHomePage.svg" alt="Custom Shape" class="custom-shape" />
 
 </div>
 
