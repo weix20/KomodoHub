@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Button from "primevue/button"
-
-
-
-
-
+// Add your script logic here or remove this block if not needed.
 </script>
 
 <template>
@@ -15,11 +9,6 @@ import Button from "primevue/button"
 <router-view></router-view>
 
 </div>
-</input>
-
 
 </template>
 
-<style scoped>
-
-</style>
