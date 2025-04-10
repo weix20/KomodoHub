@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import Help from '../views/Help.vue';
 
+// routes go here
 const routes = [
   {
     path: '/',
@@ -16,7 +17,11 @@ const routes = [
     component: () => import('../views/Register.vue')
   },
   { path: '/help', name: 'Help', component: Help },
-  // Add more routes here
+  {
+    path: '/login',
+    name: 'Login',
+     component: () => import('../views/Login.vue')
+   },
 ];
 
 const router = createRouter({

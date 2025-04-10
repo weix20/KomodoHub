@@ -52,7 +52,7 @@ function submitForm() {
       <template #content>
         <div v-for="(faq, i) in faqs" :key="i" class="mb-4">
           <h3 class="font-semibold text-lg">{{ faq.q }}</h3>
-          <p class="text-sm text-black/80">{{ faq.a }}</p>
+          <p class="text-sm text-white/80">{{ faq.a }}</p>
         </div>
       </template>
     </Card>

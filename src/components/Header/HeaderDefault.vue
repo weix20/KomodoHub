@@ -39,10 +39,9 @@ export default defineComponent({
           </h1>
           <div class = "flex gap-4">
             <Button label="Register" class="p-button bg-violet-600 hover:bg-violet-800" @click="navigateToRegister" />
-            <Button label="Login" class="p-button  bg-violet-600 hover:bg-violet-800" />
+            <Button label="Login" class="p-button  bg-violet-600 hover:bg-violet-800" @click="navigateToLogin"/>
           </div>
         </div>
-        
     </header>
     
 </template>

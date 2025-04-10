@@ -1,7 +1,7 @@
 <template>
   <Header/>
   <div class="min-h-screen flex flex-col items-center justify-center px-4">
-    <h1 class="text-2xl font-bold mb-4">Log in</h1>
+    <h1 class="text-2xl font-bold mb-4">Register</h1>
     <form @submit.prevent="handleLogin" class="space-y-4 w-full max-w-sm">
       <div>
         <label class="block mb-1">Email</label>
