@@ -5,26 +5,31 @@ import Header from "../components/Header/HeaderDefault.vue";
 
 
 
+
 </script>
 
 
 <template>
 <Header class="background"  />
 <div class="background px-4 py-8">
-  <div class="container mx-auto">
+  <div class="container mx-auto ">
     <div>
     
     
-      <h1 class="text-center font-bold text-xl mb-16"> A Digital Platform for Community-Supported Animal Conservation </h1>
+      <h1 class="text-center font-bold text-xl mb-16 "> A Digital Platform for Community-Supported Animal Conservation </h1>
       <div class="max-w-3xl align-left pl-4">
         <h1 class="text-center font-bold text-lg mb-4"> The Problems </h1>
         <h2 class="text-left text-base"> Badan Pusat Statistik, the Indonesian Bureau of Statistics, has recently published data on the country's endangered endemic species. Despite spending millions of dollars on conservation efforts, the government might have not seen any significant breakthroughs in the population of some species. The success of Komodo has been largely exclusive, and the world is now left with merely less than 100 Sumatran Tigers, Javan Rhinoceros, Bali Mynas, Javan Eagles, Tarsius, and Celebes Crested Macaques, respectively. Habitat loss remains the primary cause of the problems. Other causes include habitat changes, commercial over-exploitation, the introduction of harmful non-native species, pollution, and the spread of diseases. </h2>
       </div>
 
       <img src="/CustomShapeHomePage.svg" alt="Custom Shape" class="custom-shape" />
-      <img src="../assets/Stats.svg" alt="stats" class="stats" />
+      <img src="../assets/Stats.svg" alt="stats" 
+      class="stats " 
+      v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-l-8 animate-duration-2000', leaveClass: 'animate-leave fade-out-0' }"
+      />
     </div>
-    <div class = " flex-auto align-center " >
+    <div class = " flex-auto align-center "
+    v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }" >
       <h1 class="text-center font-bold text-xl mt-32"> The Vision </h1>
       
         <h2 class=" flex-auto text-center text-base mt-32   "> Badan Pusat Statistik, the Indonesian Bureau of Statistics, has recently published data on the country's endangered endemic species. Despite spending millions of dollars on conservation efforts, the government might have not seen any significant breakthroughs in the population of some species. The success of Komodo has been largely exclusive, and the world is now left with merely less than 100 Sumatran Tigers, Javan Rhinoceros, Bali Mynas, Javan Eagles, Tarsius, and Celebes Crested Macaques, respectively. Habitat loss remains the primary cause of the problems. Other causes include habitat changes, commercial over-exploitation, the introduction of harmful non-native species, pollution, and the spread of diseases. </h2>
@@ -32,11 +37,20 @@ import Header from "../components/Header/HeaderDefault.vue";
     </div>
 
     <img src="/CustomShapeHome2.svg" alt="Custom Shape" class="custom-shape mt-16" />
-    <img src="../assets/Elephant.svg" alt="Elephant" class=" elephant"/>
-    <img src="../assets/Tiger.svg" alt="Tiger"  class="tiger"/>
-    <img src="../assets/Lizard.svg" alt="Lizard" class=" absolute left-1/2 transform translate-x-64 -translate-y-full gap-y-4"/>
+    <div
+     v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }"
+    >
+      <img src="../assets/Elephant.svg" alt="Elephant" class=" elephant"/>
+      <img src="../assets/Tiger.svg" alt="Tiger"  class="tiger"/>
+      <img src="../assets/Lizard.svg" alt="Lizard" class=" absolute left-1/2 transform translate-x-64 -translate-y-full gap-y-4"/>
+    </div>
+    
   </div>
 </div>
+
+<footer class="background text-center py-4">
+  <p class="text-sm">© 2025 Komodo Hub. All rights reserved.</p>
+</footer>
 </template> 
 
 

@@ -4,6 +4,7 @@ import App from './App.vue'
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 import router from './router/index.ts'
+import AnimateOnScroll from 'primevue/animateonscroll';
 
   
 const app = createApp(App);
@@ -20,3 +21,4 @@ app.use(PrimeVue, {
     }
  });
  app.mount('#app');
+ app.directive('animateonscroll', AnimateOnScroll);
