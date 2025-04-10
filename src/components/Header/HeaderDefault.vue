@@ -7,13 +7,19 @@ export default defineComponent({
 </script>
 
 <template>
-    <header class="bg-transparent text-white">
-            Komodo Hub
-    </header>
+  <header class="text-white px-6 py-4 flex items-center gap-6">
+    <h1 class="text-xl font-bold">Komodo Hub</h1>
+
+    <!-- Navigation Links -->
+    <nav class="flex gap-4 text-sm">
+      <router-link to="/" class="hover:underline">Home</router-link>
+      <router-link to="/help" class="hover:underline">Help & Contact</router-link>
+    </nav>
+  </header>
 </template>
 
 <style scoped>
 header {
-    background-color: #1A1537;
+  background-color: #1A1537;
 }
 </style>
