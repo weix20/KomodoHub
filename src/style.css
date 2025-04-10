@@ -8,3 +8,8 @@
     @tailwind components;
     @tailwind utilities;
 }
+
+:global(:root) {
+    --primary-color: #1A1537;
+    --primary-color-text: #ffffff;
+}

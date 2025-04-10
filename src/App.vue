@@ -1,6 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Button from "primevue/button"
+
+/*
+
+    File Name: App.vue
+    Description: This is the main entry point of the Vue.js application. It sets up the router and includes global styles.
+    
+
+*/
 
 
 

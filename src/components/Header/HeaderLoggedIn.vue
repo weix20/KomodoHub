@@ -1,17 +1,14 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
-import Button from 'primevue/button';
 
-export default defineComponent({
-  name: 'HeaderDefault',
-  components: {
-    Button
-  }
-});
 
-// TODO: Make Button appear on the right side of the header
+
+
+
 // TODO: Make the header sticky
 // TODO: Make the link work and then the second header
+
+
+
 
 </script>
 
@@ -22,8 +19,7 @@ export default defineComponent({
               Komodo Hub
           </h1>
           <div class = "flex gap-4">
-            <Button label="Register" class="p-button bg-violet-600 hover:bg-violet-800" />
-            <Button label="Login" class="p-button  bg-violet-600 hover:bg-violet-800" />
+            
           </div>
         </div>
         
