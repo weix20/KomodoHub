@@ -7,6 +7,8 @@ import InputText from 'primevue/inputtext'
 import Textarea from 'primevue/textarea'
 import Header from '../components/Header/HeaderDefault.vue'
 
+
+
 // Array of frequently asked questions
 const faqs = [
   { q: 'What is Komodo Hub?', a: 'It’s a digital platform for supporting animal conservation through community engagement.' },

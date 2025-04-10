@@ -6,6 +6,7 @@ import Aura from '@primevue/themes/aura';
 import router from './router/index.ts'
 import AnimateOnScroll from 'primevue/animateonscroll';
 
+
   
 const app = createApp(App);
 app.use(router);
