@@ -1,13 +1,29 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Button from 'primevue/button';
+import { useRouter } from 'vue-router';
 
 export default defineComponent({
   name: 'HeaderDefault',
   components: {
     Button
+  },
+  setup(){
+    const router = useRouter();
+    const navigateToRegister = () => {
+      router.push('/register');
+    };
+    const navigateToLogin = () => {
+      router.push('/login');
+    };
+    return {
+      navigateToRegister,
+      navigateToLogin
+    };
   }
 });
+
+
 
 // TODO: Make Button appear on the right side of the header
 // TODO: Make the header sticky
@@ -22,7 +38,7 @@ export default defineComponent({
               Komodo Hub
           </h1>
           <div class = "flex gap-4">
-            <Button label="Register" class="p-button bg-violet-600 hover:bg-violet-800" />
+            <Button label="Register" class="p-button bg-violet-600 hover:bg-violet-800" @click="navigateToRegister" />
             <Button label="Login" class="p-button  bg-violet-600 hover:bg-violet-800" />
           </div>
         </div>

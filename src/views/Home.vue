@@ -2,7 +2,13 @@
 
 
 import Header from "../components/Header/HeaderDefault.vue";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
+
+const navigateToHelpPage = () => {
+  router.push("/help");
+};
 
 // TODO: Write links to the login and register pages in the header
 
@@ -53,6 +59,8 @@ import Header from "../components/Header/HeaderDefault.vue";
   <p class="text-sm text-black">©Manik Hapsara 08/2023 DISCLAIMER This study case has been designed for educational purposes only. The names, persons, job functions, and organizations 
 mentioned in the story do not exist in real life. Any similarities to persons living or dead, or actual events are purely coincidental. The opinions expressed within the 
 content are solely the author's and do not reflect the opinions and beliefs of any parties or its affiliates.© 2025 Komodo Hub. All rights reserved.</p>
+
+  <h1 @click="navigateToHelpPage" class="text-black"> Help page </h1>
 </footer>
 </template> 
 
