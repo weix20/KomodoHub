@@ -5,7 +5,7 @@
       <input
         type="text"
         placeholder="Search (Animals, reports, studies)"
-        class="w-full p-3 rounded-full bg-pink-500 text-white placeholder-white focus:outline-none pr-10"
+        class="w-full p-3 rounded-full bg-purple-500 text-white placeholder-white focus:outline-none pr-10"
       />
       <span class="absolute right-4 top-3 text-white text-lg pointer-events-none">🔍</span>
     </div>
@@ -13,7 +13,7 @@
     <!-- Add Post Button -->
     <div class="text-right">
       <button
-        class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-500 transition"
+        class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-pink-500 transition"
         @click="addPost"
       >
         Add Post
@@ -23,7 +23,7 @@
     <!-- Posts -->
     <div v-for="(post, index) in posts" :key="index">
       <div
-        class="bg-pink-500 p-6 rounded-2xl shadow cursor-pointer hover:bg-purple-200 transition hover:text-black"
+        class="bg-purple-500 p-6 rounded-2xl shadow cursor-pointer hover:bg-purple-200 transition hover:text-black"
         @click="handlePostClick(index)"
       >
         <h2 class="text-xl font-semibold mb-2">{{ post.title }}</h2>

@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'fixed top-0 left-0 h-screen bg-pink-500 shadow-lg z-50 transition-all duration-300 ease-in-out flex flex-col justify-between py-4',
+      'fixed top-0 left-0 h-screen bg-purple-500 shadow-lg z-50 transition-all duration-300 ease-in-out flex flex-col justify-between py-4',
       expanded ? 'w-52 px-4' : 'w-16 px-2'
     ]"
   >
