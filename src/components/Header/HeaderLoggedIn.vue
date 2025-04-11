@@ -1,13 +1,9 @@
 <script lang="ts">
 
-
-
-
-
-// TODO: Make the header sticky
-// TODO: Make the link work and then the second header
-
-
+// Added to remove the complaint "Cannot find name 'defineComponent'"
+export default {
+  name: 'HeaderLoggedIn',
+};
 
 
 </script>

@@ -22,6 +22,11 @@ const routes = [
     name: 'Login',
      component: () => import('../views/Login.vue')
    },
+   {
+    path: '/community-posts',
+    name: 'CommunityPosts',
+     component: () => import('../views/CommunityPosts.vue')
+   }
 ];
 
 const router = createRouter({
