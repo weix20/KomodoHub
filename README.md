@@ -1,68 +1,74 @@
+## KomodoHub Backend Service Setup
 
-# KomodoHub
+The KomodoHub backend is built with **Python 3.8**, **Flask**, **uWSGI**, and **MySQL**. Follow the steps below to set
+up and run the server:
 
-## 🚀 Getting Started (For Developers)
-Follow these steps to set up and run the project locally.
+1. Ensure you're using **Python 3.8**.
+2. Navigate to the `./backend/` directory.
+    ```bash
+    cd ./backend/
+    ```
+3. Install the required dependencies:
 
-### 📌 Prerequisites
-1. **Clone the repository:**  
-   ```bash
-   git clone (repo_url)
-   ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-2. **Ensure you have npm installed properly:**  
-   You can check this by running:
-   ```bash
-   npm -v
-   ```
-   If not installed, follow the [official npm installation guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+   (Make sure to update the `requirements.txt` with any new libraries and versions when adding dependencies).
 
-### 📦 Installing Dependencies
-After cloning the repository, navigate to the project directory and install the required node modules by running:
+4. Ensure the MySQL database exists. If not, create it by running the following command in the MySQL client:
 
-```bash
-npm install
-```
+    ```sql
+    CREATE DATABASE  if not exists komodo_hub CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+    ```
 
-### 🖥 Setting Up Your IDE
-To work efficiently, make sure to install:
-- **Vue Extension** (for Vue support)
-- **Tailwind Extension** (for styling and improved IntelliSense recommendations)
+5. For development purposes, run the application using:
 
-### 🔧 Running the Development Server
-Start the local development server using:
+    ```bash
+    python app.py
+    ```
 
-```bash
-npm run dev
-```
-Follow the instructions in the terminal to see the website working.
+6. For production, run the application with uWSGI:
 
-### 📱 Testing on Mobile
-To test the website on your phone or another device on the same WiFi connection, run:
+    ```bash
+    uwsgi --ini uwsgi.ini
+    ```
 
-```bash
-npm run dev -- --host
-```
-Copy the generated link and open it in your mobile browser.
+---
 
-### ✅ Type Safety & Building
-Before finalizing, ensure type safety and check for potential issues by running:
+## Project Structure
 
-```bash
-npm run build
-```
+- `app.py`: The main application file where the Flask app is initialized.
+- `config.py`: Contains all configuration settings for the app, including the database URI and secret keys.
+- `models.py`: Defines the database schema (tables and relationships).
+- `routes.py`: Contains all the route definitions for the RESTful API.
+- `uwsgi.ini`: Configuration for uWSGI to serve the app in production.
+- `wsgi.py`: Entry point for the uWSGI server to run the Flask app.
+- `requirements.txt`: Lists all the Python dependencies required for the project.
 
-### Pulling the latest changes
-When a change is made, we can pull those latest changes by running
-```bash
-git pull 
-```
-Sometimes you may need to use
-```bash
-git pull -all 
-```
-This will warn you of any problems that could occur if the site was uploaded to a server.  
-(Although we won't be deploying, it's good practice to test this step.)
+**Note:**
+The init.sql file is a reference table structure. The schema should be adapted as needed based on business requirements,
+and tables may be added, modified, or removed accordingly.
 
-### 🌳 Creating Branches
-We will soon be creating different branches to better organize and manage the project.
+Please focus on maintaining the ***models.py*** file, as it will be used by the framework to automatically generate the
+corresponding database tables.
+
+---
+## Interface curl call case
+1. Register interface case
+    ```bash
+    curl --request POST \
+      --url http://localhost:9898/register \
+      --header 'Content-Type: application/json' \
+      --data '{
+       "username": "alice123",
+       "password": "securepassword",
+       "email": "alice@example.com",
+       "role": "STUDENT",
+       "full_name": "Alice Zhang",
+       "age": 25,
+       "gender": "F",
+       "bio": "AI lover and Python developer.",
+       "avatar_url": "https://example.com/avatar.jpg"
+      }'
+    ```

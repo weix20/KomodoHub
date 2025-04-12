@@ -1,0 +1,4 @@
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost:3306/komodo_hub?charset=utf8mb4'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+SECRET_KEY = 'b61f06fa4299401b9e31c4d2a4f341d7'
+JWT_SECRET_KEY = '0fe0b5c2677c438dbbf1b04ef7d9ad34'
