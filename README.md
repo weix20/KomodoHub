@@ -46,12 +46,11 @@ up and run the server:
 - `wsgi.py`: Entry point for the uWSGI server to run the Flask app.
 - `requirements.txt`: Lists all the Python dependencies required for the project.
 
-**Note:**
-The init.sql file is a reference table structure. The schema should be adapted as needed based on business requirements,
-and tables may be added, modified, or removed accordingly.
+**Note:**  
+The `init.sql` file (located in the root directory) contains the full database schema with English comments.  
+It serves as a reference structure and can be adapted based on business requirements.  
+Tables may be added, modified, or removed as needed.
 
-Please focus on maintaining the ***models.py*** file, as it will be used by the framework to automatically generate the
-corresponding database tables.
 
 ---
 ## Interface curl call case
